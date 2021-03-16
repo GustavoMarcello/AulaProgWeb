@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="images/fatec.ico">
+  <title>Formulário</title>
+</head>
+
+<body style="background-color: #c8d3a2d0;">
+  <header>
+    <!-- img Logo Fatec -->
+    <img src="images/Logo Fatec - SF - 300x106.png" alt="Logo">
+  </header>
+
+  <main>
+    <h2 class="subtitulo">Complete seu cadastro:</h2>
+    <form>
+      <!-- Input nome -->
+      <div class="form-group">
+        <label for="nome"><strong>Nome:</strong></label>
+        <div class="input-group mb-2">
+          <input type="text" class="form-control" placeholder="Nome" aria-label="Username"
+            aria-describedby="basic-addon1" required>
+        </div>
+
+
+        <!-- checkbox sexo -->
+        <label style="margin-bottom: 0px;" for="Sexo"><strong>Sexo:</strong></label><br>
+        <div class="form-check form-check-inline mb-1">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label" for="inlineRadio1">Masculino</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2">Feminino</label>
+        </div>
+        <br>
+
+        <!-- input cidade, estado, cep -->
+        <label for="Endereço"><strong>Endereço:</strong></label>
+        <div class="form-row mb-2">
+          <div class="col-7">
+            <input type="text" class="form-control" placeholder="Cidade" required>
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Estado" required>
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Cep" required>
+          </div>
+        </div>
+
+
+
+        <!-- Select para semestre -->
+        <label for="Semestre"><strong>Semestre Atual:</strong></label>
+        <div>
+          <select class="custom-select mb-2" required>
+            <option selected disabled>Selecione</option>
+            <option value="1">1° Semestre</option>
+            <option value="2">2° Semestre</option>
+            <option value="3">3° Semestre</option>
+            <option value="4">4° Semestre</option>
+            <option value="5">5° Semestre</option>
+            <option value="6">6° Semestre</option>
+          </select>
+        </div>
+
+
+
+        <!-- checkbox para disciplinas -->
+        <div style="margin-bottom: 10px;">
+          <label for="disciplinas"><strong>Selecione sua(s) área(s) de interesse:</strong></label>
+          <br>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1">
+            <label class="form-check-label" for="exampleRadios1">
+              Programação
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              Suporte
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1">
+            <label class="form-check-label" for="exampleRadios1">
+             Dev Rápido
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              Implantação de Sistemas
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1">
+            <label class="form-check-label" for="exampleRadios1">
+              Testes
+            </label>
+          </div>
+        </div>
+
+
+        <!-- Input de e-mail -->
+        <div>
+          <label for="E-mail"><strong>E-mail:</label></strong>
+          <input type="email" class="form-control mb-2" placeholder="E-mail"
+            aria-label="Username" aria-describedby="basic-addon1" required>
+        </div>
+
+
+
+        <!-- Input senha -->
+        <div class="form-group">
+          <label for="Senha"><strong>Senha:</strong></label>
+          <input type="password" class="form-control" id="exampleInputPassword1" required>
+        </div>
+
+        <!-- Input senha -->
+        <div class="form-group">
+          <label for="Senha-confirma"><strong>Confirme sua senha:</strong></label>
+          <input type="password" class="form-control" id="exampleInputPassword2" required>
+        </div>
+
+
+        <!-- Botão confirma -->
+        <div>
+          <button id="btn-confirma" class="btn btn-secondary">Confirma</button>
+        </div>
+
+    </form>
+  </main>
+
+  <footer>
+    <div>Aluno: Gustavo Goetze Marcello</div>
+  </footer>
+  <!-- link arquivos bootstrap js -->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
